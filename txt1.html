@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Box Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f3efef;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between the boxes */
+}
+
+.box {
+    width: calc(50% - 10px); /* Adjust width to account for the gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none; /* Ensure links have no underline */
+}
+
+#box1 { background-color: #3498db; } /* Blue */
+#box2 { background-color: #e74c3c; } /* Red */
+#box3 { background-color: #2ecc71; } /* Green */
+#box4 { background-color: #f1c40f; } /* Yellow */
+#box5 { background-color: #9b59b6; } /* Purple */
+#box6 { background-color: #e67e22; } /* Orange */
+</style>
+<body>
+    <div class="container">
+        <a href="https://www.example.com/latest-news" class="box" id="box1">LATEST NEWS</a>
+        <a href="http://127.0.0.1:5500/books.html" class="box" id="box2">BOOKS</a>
+        <a href="https://www.example.com/weather" class="box" id="box3">WEATHER</a>
+        <a href="https://www.example.com/gk" class="box" id="box4">G.K</a>
+        <a href="https://www.example.com/news-paper" class="box" id="box5">NEWS PAPER</a>
+        <a href="https://www.example.com/places" class="box" id="box6">PLACES</a>
+    </div>
+</body>
+</html>
